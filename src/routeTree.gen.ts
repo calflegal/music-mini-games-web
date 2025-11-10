@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TesteRouteImport } from './routes/teste'
 import { Route as DeferredRouteImport } from './routes/deferred'
+import { Route as CreateCustomerRouteImport } from './routes/create-customer'
 import { Route as IndexRouteImport } from './routes/index'
 
 const TesteRoute = TesteRouteImport.update({
@@ -23,6 +24,11 @@ const DeferredRoute = DeferredRouteImport.update({
   path: '/deferred',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CreateCustomerRoute = CreateCustomerRouteImport.update({
+  id: '/create-customer',
+  path: '/create-customer',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -31,30 +37,34 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/create-customer': typeof CreateCustomerRoute
   '/deferred': typeof DeferredRoute
   '/teste': typeof TesteRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/create-customer': typeof CreateCustomerRoute
   '/deferred': typeof DeferredRoute
   '/teste': typeof TesteRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/create-customer': typeof CreateCustomerRoute
   '/deferred': typeof DeferredRoute
   '/teste': typeof TesteRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/deferred' | '/teste'
+  fullPaths: '/' | '/create-customer' | '/deferred' | '/teste'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/deferred' | '/teste'
-  id: '__root__' | '/' | '/deferred' | '/teste'
+  to: '/' | '/create-customer' | '/deferred' | '/teste'
+  id: '__root__' | '/' | '/create-customer' | '/deferred' | '/teste'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CreateCustomerRoute: typeof CreateCustomerRoute
   DeferredRoute: typeof DeferredRoute
   TesteRoute: typeof TesteRoute
 }
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DeferredRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/create-customer': {
+      id: '/create-customer'
+      path: '/create-customer'
+      fullPath: '/create-customer'
+      preLoaderRoute: typeof CreateCustomerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -87,6 +104,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CreateCustomerRoute: CreateCustomerRoute,
   DeferredRoute: DeferredRoute,
   TesteRoute: TesteRoute,
 }

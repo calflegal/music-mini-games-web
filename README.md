@@ -1,4 +1,4 @@
-# tanstack-start-cloudflare-workers
+# Music Mini Games
 
 This is a template to work with tanstack start with cloudflare workers
 

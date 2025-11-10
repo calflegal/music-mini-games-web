@@ -1,0 +1,50 @@
+{
+  "../../../../../~start/default-client-entry.tsx": {
+    "file": "assets/main-BL7vazI0.js",
+    "name": "main",
+    "src": "../../../../../~start/default-client-entry.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/routes/teste.tsx?tsr-split=component",
+      "src/routes/deferred.tsx?tsr-split=component",
+      "src/routes/create-customer.tsx?tsr-split=component",
+      "src/routes/index.tsx?tsr-split=component"
+    ]
+  },
+  "src/routes/create-customer.tsx?tsr-split=component": {
+    "file": "assets/create-customer-CE6R7Unh.js",
+    "name": "create-customer",
+    "src": "src/routes/create-customer.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/deferred.tsx?tsr-split=component": {
+    "file": "assets/deferred-DsiTA-S9.js",
+    "name": "deferred",
+    "src": "src/routes/deferred.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/index.tsx?tsr-split=component": {
+    "file": "assets/index-BiUc2iwc.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/teste.tsx?tsr-split=component": {
+    "file": "assets/teste-BlLGjyOq.js",
+    "name": "teste",
+    "src": "src/routes/teste.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../~start/default-client-entry.tsx"
+    ]
+  }
+}

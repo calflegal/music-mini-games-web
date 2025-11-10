@@ -7,3 +7,8 @@ export async function customersGet(db: Db) {
     return data;
 }
 
+export async function customerCreate(db: Db, data: InsertCustomer) {
+    const result = await db.insert(customer).values(data).returning();
+    return result[0];
+}
+

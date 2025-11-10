@@ -1,0 +1,1 @@
+import{u as r,R as s,j as e}from"./main-BL7vazI0.js";const d=function(){r();const n=s.useLoaderData();return e.jsxs("div",{children:[e.jsx("h1",{children:"Customers Server Rendered"}),e.jsx("div",{children:n==null?void 0:n.map(o=>e.jsx("div",{children:o.name},o.id))})]})};export{d as component};
