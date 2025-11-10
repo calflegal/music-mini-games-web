@@ -1,10 +1,12 @@
 import { drizzle, DrizzleD1Database } from "drizzle-orm/d1";
 
-import * as customerSchema from "@/db/customerSchema"
+import * as scoresSchema from "@/db/scoresSchema"
+import * as usersSchema from "@/db/usersSchema"
 
 
 export const dbSchema = {
-    ...customerSchema, 
+    ...scoresSchema,
+    ...usersSchema,
 }
 
 export type Db = DrizzleD1Database<typeof dbSchema>

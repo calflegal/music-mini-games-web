@@ -14,13 +14,17 @@
   "author": "Cesar Bonadio",
   "license": "MIT",
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.17",
     "@tanstack/react-router": "^1.121.12",
     "@tanstack/react-start": "^1.121.12",
     "@tanstack/zod-adapter": "^1.121.12",
+    "@types/matter-js": "^0.20.2",
     "drizzle-orm": "^0.43.1",
     "drizzle-zod": "^0.7.1",
+    "matter-js": "^0.20.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.17",
     "vite": "^6.3.5"
   },
   "devDependencies": {

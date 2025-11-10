@@ -9,24 +9,18 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as TesteRouteImport } from './routes/teste'
-import { Route as DeferredRouteImport } from './routes/deferred'
-import { Route as CreateCustomerRouteImport } from './routes/create-customer'
+import { Route as ScoresRouteImport } from './routes/scores'
+import { Route as GameRouteImport } from './routes/game'
 import { Route as IndexRouteImport } from './routes/index'
 
-const TesteRoute = TesteRouteImport.update({
-  id: '/teste',
-  path: '/teste',
+const ScoresRoute = ScoresRouteImport.update({
+  id: '/scores',
+  path: '/scores',
   getParentRoute: () => rootRouteImport,
 } as any)
-const DeferredRoute = DeferredRouteImport.update({
-  id: '/deferred',
-  path: '/deferred',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CreateCustomerRoute = CreateCustomerRouteImport.update({
-  id: '/create-customer',
-  path: '/create-customer',
+const GameRoute = GameRouteImport.update({
+  id: '/game',
+  path: '/game',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -37,59 +31,48 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/create-customer': typeof CreateCustomerRoute
-  '/deferred': typeof DeferredRoute
-  '/teste': typeof TesteRoute
+  '/game': typeof GameRoute
+  '/scores': typeof ScoresRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/create-customer': typeof CreateCustomerRoute
-  '/deferred': typeof DeferredRoute
-  '/teste': typeof TesteRoute
+  '/game': typeof GameRoute
+  '/scores': typeof ScoresRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/create-customer': typeof CreateCustomerRoute
-  '/deferred': typeof DeferredRoute
-  '/teste': typeof TesteRoute
+  '/game': typeof GameRoute
+  '/scores': typeof ScoresRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/create-customer' | '/deferred' | '/teste'
+  fullPaths: '/' | '/game' | '/scores'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/create-customer' | '/deferred' | '/teste'
-  id: '__root__' | '/' | '/create-customer' | '/deferred' | '/teste'
+  to: '/' | '/game' | '/scores'
+  id: '__root__' | '/' | '/game' | '/scores'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  CreateCustomerRoute: typeof CreateCustomerRoute
-  DeferredRoute: typeof DeferredRoute
-  TesteRoute: typeof TesteRoute
+  GameRoute: typeof GameRoute
+  ScoresRoute: typeof ScoresRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/teste': {
-      id: '/teste'
-      path: '/teste'
-      fullPath: '/teste'
-      preLoaderRoute: typeof TesteRouteImport
+    '/scores': {
+      id: '/scores'
+      path: '/scores'
+      fullPath: '/scores'
+      preLoaderRoute: typeof ScoresRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/deferred': {
-      id: '/deferred'
-      path: '/deferred'
-      fullPath: '/deferred'
-      preLoaderRoute: typeof DeferredRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/create-customer': {
-      id: '/create-customer'
-      path: '/create-customer'
-      fullPath: '/create-customer'
-      preLoaderRoute: typeof CreateCustomerRouteImport
+    '/game': {
+      id: '/game'
+      path: '/game'
+      fullPath: '/game'
+      preLoaderRoute: typeof GameRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -104,9 +87,8 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  CreateCustomerRoute: CreateCustomerRoute,
-  DeferredRoute: DeferredRoute,
-  TesteRoute: TesteRoute,
+  GameRoute: GameRoute,
+  ScoresRoute: ScoresRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

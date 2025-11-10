@@ -4,5 +4,6 @@ node_modules
 /build
 .output
 .vinxi
+.tanstack
 .env
 .dev.vars

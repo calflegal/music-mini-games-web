@@ -7,6 +7,8 @@ import {
   Scripts,
 } from '@tanstack/react-router'
 
+import appCss from '../styles.css?url'
+
 export const Route = createRootRoute({
   head: () => ({
     meta: [
@@ -18,7 +20,13 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'TanStack Start Starter',
+        title: 'Music Mini Games',
+      },
+    ],
+    links: [
+      {
+        rel: 'stylesheet',
+        href: appCss,
       },
     ],
   }),

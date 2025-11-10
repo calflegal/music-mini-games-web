@@ -1,1 +1,0 @@
-import{a as n,j as e,A as i}from"./main-BL7vazI0.js";const d=function(){const{deferredCustomers:r}=n.useLoaderData();return e.jsxs("div",{children:[e.jsx("h1",{children:"Defered Example"}),e.jsx(i,{promise:r,fallback:e.jsx("div",{children:"Loading..."}),children:s=>e.jsx("div",{children:JSON.stringify(s)})})]})};export{d as component};
