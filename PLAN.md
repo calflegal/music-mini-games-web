@@ -127,8 +127,8 @@ dual-shape needed (nothing has shipped).
   Grafana dashboard rows. Server-side event beacons instead of in-app GA.
 - **CORS**: allow musicminigames.com origin for the web daily; web client hits the Fly
   API directly.
-- **Cloudflare side**: the worker keeps serving the marketing site (and the legacy
-  Matter.js game until retired). D1 stays for that legacy game only; new game state
+- **Cloudflare side**: the worker serves the marketing site only — the legacy
+  Matter.js game and its D1 scores were removed (not a music game). New game state
   lives in Postgres on Fly. One backend of record.
 - **Hygiene**: GA `?internal=1` flag pattern already exists for web pages; keep using
   it on musicminigames.com (needs the same snippet added there).

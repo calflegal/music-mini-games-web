@@ -17,11 +17,6 @@ compatibility_date  =  "2024-09-23"  # Or a later date
 # Check Vinxi/Nitro Cloudflare preset docs for asset handling specifics.
 assets = { directory = "./.output/public/", binding = "ASSETS" }
 
-# database D1
-d1_databases = [
-    { binding = "DB", database_name = "music-mini-games-db", database_id = "f99c8287-8f10-43f2-ae7d-2571119346aa"  },
-]
-
 # [vars] section is NOT used for secrets during deployment with this GitHub Action setup.
 # Secrets are injected securely via the workflow.
 # Use a separate `.dev.vars` file for local development secrets.

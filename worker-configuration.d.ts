@@ -3,7 +3,6 @@
 // Runtime types generated with workerd@1.20250424.0 2024-09-19 nodejs_compat
 declare namespace Cloudflare {
 	interface Env {
-		DB: D1Database;
 		HOST_NAME: string;
 	}
 }

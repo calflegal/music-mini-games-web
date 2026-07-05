@@ -75,20 +75,6 @@ export function Hero() {
           transform: scale(0.98);
         }
 
-        .hero .web-play-link {
-          display: inline-block;
-          margin-top: var(--space-sm);
-          font-size: 17px;
-          font-weight: 600;
-          color: var(--premium-blue);
-          text-decoration: none;
-          animation: fadeInUp 0.8s ease-out 0.65s both;
-        }
-
-        .hero .web-play-link:hover {
-          text-decoration: underline;
-        }
-
         .hero .newsletter-form-wrapper {
           margin-top: var(--space-md);
           max-width: 500px;
@@ -150,24 +136,6 @@ export function Hero() {
           >
             <img src="/app_store_badge.svg" alt="Download on the App Store" />
           </a>
-
-          <div>
-            <a
-              className="web-play-link"
-              href="/game"
-              onClick={() => {
-                if (typeof window !== 'undefined' && (window as any).gtag) {
-                  (window as any).gtag('event', 'cta_click', {
-                    event_category: 'engagement',
-                    event_label: 'hero_web_game',
-                    value: 1
-                  });
-                }
-              }}
-            >
-              Or play a mini game right here in your browser →
-            </a>
-          </div>
 
           <div className="newsletter-form-wrapper">
             <div className="ml-embedded" data-form="0JVkKe"></div>
