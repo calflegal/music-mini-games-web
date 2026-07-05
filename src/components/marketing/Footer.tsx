@@ -49,6 +49,23 @@ export function Footer() {
           transform: scale(0.98);
         }
 
+        .footer .footer-links {
+          display: flex;
+          gap: var(--space-md);
+          justify-content: center;
+          margin-bottom: var(--space-md);
+        }
+
+        .footer .footer-links a {
+          color: #f5f5f7;
+          font-size: 14px;
+          text-decoration: none;
+        }
+
+        .footer .footer-links a:hover {
+          text-decoration: underline;
+        }
+
         .footer .footer-bottom {
           padding-top: var(--space-lg);
           border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -95,6 +112,10 @@ export function Footer() {
           </div>
 
           <div className="footer-bottom">
+            <div className="footer-links">
+              <a href="/game">Play in your browser</a>
+              <a href="/scores">High scores</a>
+            </div>
             <p className="copyright">© {currentYear} Music Mini Games. All rights reserved.</p>
           </div>
         </div>
