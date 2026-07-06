@@ -154,8 +154,7 @@ function PrivacyPage() {
         <h2>This Website</h2>
         <p>
           The musicminigames.com website uses Google Analytics to understand
-          site traffic and MailerLite for our email newsletter if you choose
-          to sign up. The iOS app does not use these services.
+          site traffic. The iOS app does not use this service.
         </p>
 
         <h2>Changes to This Policy</h2>

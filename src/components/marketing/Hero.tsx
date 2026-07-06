@@ -1,18 +1,4 @@
-import { useEffect } from 'react';
-
 export function Hero() {
-  useEffect(() => {
-    // Load MailerLite form script
-    const script = document.createElement('script');
-    script.src = 'https://static.mailerlite.com/js/w/webforms.min.js?v1c75f89fdaf105853da4af6f08e96c33';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <>
       <style>{`
@@ -75,13 +61,6 @@ export function Hero() {
           transform: scale(0.98);
         }
 
-        .hero .newsletter-form-wrapper {
-          margin-top: var(--space-md);
-          max-width: 500px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
         .hero .contact-line {
           margin-top: var(--space-md);
           font-size: 14px;
@@ -136,10 +115,6 @@ export function Hero() {
           >
             <img src="/app_store_badge.svg" alt="Download on the App Store" />
           </a>
-
-          <div className="newsletter-form-wrapper">
-            <div className="ml-embedded" data-form="0JVkKe"></div>
-          </div>
 
           <p className="contact-line">Feedback? Questions? email calvin [at] musicminigames.com</p>
         </div>
