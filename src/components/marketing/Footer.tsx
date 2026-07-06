@@ -60,6 +60,20 @@ export function Footer() {
           margin: 0;
         }
 
+        .footer .footer-links {
+          margin: 0 0 var(--space-xs);
+          font-size: 12px;
+        }
+
+        .footer .footer-links a {
+          color: #a1a1a6;
+          text-decoration: none;
+        }
+
+        .footer .footer-links a:hover {
+          text-decoration: underline;
+        }
+
         @media (max-width: 640px) {
           .footer {
             padding: var(--space-xl) var(--space-sm) var(--space-md);
@@ -95,6 +109,9 @@ export function Footer() {
           </div>
 
           <div className="footer-bottom">
+            <p className="footer-links">
+              <a href="/privacy">Privacy Policy</a>
+            </p>
             <p className="copyright">© {currentYear} Music Mini Games. All rights reserved.</p>
           </div>
         </div>
