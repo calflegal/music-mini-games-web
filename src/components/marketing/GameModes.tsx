@@ -74,11 +74,6 @@ export function GameModes() {
           box-shadow: 0 8px 24px rgba(255, 149, 0, 0.15);
         }
 
-        .game-modes .mode-icon {
-          font-size: 48px;
-          margin-bottom: var(--space-sm);
-        }
-
         .game-modes .mode-title {
           font-size: 24px;
           font-weight: 700;
@@ -136,19 +131,30 @@ export function GameModes() {
       `}</style>
       <section className="game-modes">
         <div className="container">
-          <h2 className="section-title">Two Games, Endless Learning</h2>
+          <h2 className="section-title">Three Games, Endless Learning</h2>
           <p className="section-description">
-            Master different musical skills with two unique games, each featuring multiple difficulty levels and comprehensive tracking.
+            Master different musical skills with three unique games, each featuring multiple difficulty levels.
           </p>
 
           <div className="modes-grid">
+            {/* Progressions */}
+            <div className="mode-card daily">
+              <h3 className="mode-title">Progressions</h3>
+              <p className="mode-subtitle">Chord Progression Ear Training</p>
+              <ul className="mode-features">
+                <li>Hear a progression, name the chords</li>
+                <li>Daily Challenge: five rounds, same puzzles for everyone</li>
+                <li>Unlimited practice rounds</li>
+                <li>Easy, Medium, and Hard tiers</li>
+              </ul>
+            </div>
+
             {/* Strike a Chord */}
             <div className="mode-card practice">
-              <div className="mode-icon">🎵</div>
               <h3 className="mode-title">Strike a Chord</h3>
               <p className="mode-subtitle">Chord Singing Game</p>
               <ul className="mode-features">
-                <li>Real-time pitch detection</li>
+                <li>Live pitch detection</li>
                 <li>Three modes: Practice, Challenge, Daily</li>
                 <li>Learn 21 chord types</li>
                 <li>Session recording & playback</li>
@@ -157,27 +163,13 @@ export function GameModes() {
 
             {/* Pitchin' Impossible */}
             <div className="mode-card challenge">
-              <div className="mode-icon">🎯</div>
               <h3 className="mode-title">Pitchin' Impossible</h3>
               <p className="mode-subtitle">Pitch Discrimination Game</p>
               <ul className="mode-features">
                 <li>Train your ear precision</li>
                 <li>Easy, Medium, Hard difficulties</li>
                 <li>Detect subtle pitch differences</li>
-                <li>Three-lives scoring system</li>
-              </ul>
-            </div>
-
-            {/* Shared Features */}
-            <div className="mode-card daily">
-              <div className="mode-icon">✨</div>
-              <h3 className="mode-title">Shared Features</h3>
-              <p className="mode-subtitle">Built for Success</p>
-              <ul className="mode-features">
-                <li>Game Center leaderboards</li>
-                <li>Beautiful, intuitive interface</li>
-                <li>No subscription required</li>
-                <li>Optimized for all iOS devices</li>
+                <li>Scoring with three lives</li>
               </ul>
             </div>
           </div>

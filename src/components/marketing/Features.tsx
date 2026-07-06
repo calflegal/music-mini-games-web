@@ -49,11 +49,6 @@ export function Features() {
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        .features .feature-icon {
-          font-size: 40px;
-          margin-bottom: var(--space-sm);
-        }
-
         .features .feature-title {
           font-size: 18px;
           font-weight: 600;
@@ -79,60 +74,53 @@ export function Features() {
         <div className="container">
           <h2 className="section-title">Powerful Features for Musical Growth</h2>
           <p className="section-description">
-            Everything you need to improve your pitch accuracy, train your ear, and master musical skills through two engaging games.
+            Everything you need to improve your pitch accuracy, train your ear, and master musical skills through three engaging games.
           </p>
 
           <div className="features-grid">
             <div className="feature">
-              <div className="feature-icon">🎤</div>
-              <h3 className="feature-title">Real-Time Audio Processing</h3>
+              <h3 className="feature-title">Live Audio Processing</h3>
               <p className="feature-description">
-                Instant pitch detection for Strike a Chord and high-quality pitch shifting for Pitchin' Impossible. Advanced audio technology across your full vocal range.
+                Instant pitch detection for Strike a Chord, precise pitch shifting for Pitchin' Impossible, and real marimba samples in Progressions.
               </p>
             </div>
 
             <div className="feature">
-              <div className="feature-icon">🎮</div>
-              <h3 className="feature-title">Two Complete Music Games</h3>
+              <h3 className="feature-title">Three Complete Music Games</h3>
               <p className="feature-description">
-                Strike a Chord for chord singing (Practice, Challenge, Daily modes) and Pitchin' Impossible for pitch discrimination (Easy, Medium, Hard levels). Multiple ways to improve.
+                Progressions for chord progression ear training, Strike a Chord for chord singing, and Pitchin' Impossible for pitch discrimination. Multiple ways to improve.
               </p>
             </div>
 
             <div className="feature">
-              <div className="feature-icon">🔥</div>
-              <h3 className="feature-title">Daily Wordle-Style Challenges</h3>
+              <h3 className="feature-title">Daily Challenges</h3>
               <p className="feature-description">
-                Strike a Chord features one puzzle per day, same for everyone worldwide. Build your streak and compete on global leaderboards.
+                Progressions and Strike a Chord each serve one puzzle per day, same for everyone worldwide. Come back daily and build your streak.
               </p>
             </div>
 
             <div className="feature">
-              <div className="feature-icon">🏆</div>
-              <h3 className="feature-title">Game Center Leaderboards</h3>
+              <h3 className="feature-title">Difficulty That Grows With You</h3>
               <p className="feature-description">
-                Compete globally on Game Center leaderboards for every mode and difficulty level. Track your best scores and climb the rankings.
+                Progressions moves from multiple choice up to Hard mode, where you enter every chord yourself. Center your ear anytime with the I, V, I reference button.
               </p>
             </div>
 
             <div className="feature">
-              <div className="feature-icon">🎵</div>
               <h3 className="feature-title">21 Chord Types</h3>
               <p className="feature-description">
-                Start with basic major, minor, augmented, and diminished chords. Unlock advanced 7ths and complex voicings.
+                Start with basic major, minor, augmented, and diminished chords. One purchase unlocks every chord type across both chord games.
               </p>
             </div>
 
             <div className="feature">
-              <div className="feature-icon">💎</div>
               <h3 className="feature-title">No Subscription</h3>
               <p className="feature-description">
-                Free to download with optional one-time purchases. No recurring fees. Own your learning forever.
+                Free to download with optional purchases. No recurring fees. Own your learning forever.
               </p>
             </div>
 
             <div className="feature">
-              <div className="feature-icon">📱</div>
               <h3 className="feature-title">iPhone & iPad</h3>
               <p className="feature-description">
                 Beautiful interface optimized for all iOS devices. Works great on iPhone and iPad with full support.
@@ -140,7 +128,6 @@ export function Features() {
             </div>
 
             <div className="feature">
-              <div className="feature-icon">🎧</div>
               <h3 className="feature-title">Session Recording</h3>
               <p className="feature-description">
                 Strike a Chord's Practice mode automatically records your sessions. Listen back to track your improvement over time.

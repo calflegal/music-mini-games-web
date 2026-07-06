@@ -116,7 +116,7 @@ export function Hero() {
           <h1 className="headline">Music Mini Games</h1>
           <p className="tagline">Play. Practice. Progress.</p>
           <p className="subheadline">
-            Learn music through interactive mini-games. Master chord singing and train your ear with two engaging games featuring real-time audio processing.
+            Learn music through interactive mini games. Identify chord progressions by ear, sing chords with live pitch detection, and sharpen your sense of pitch. Three games in one app.
           </p>
           <a
             href="https://apps.apple.com/app/apple-store/id6752395649?pt=1534960&ct=mmg-landing&mt=8"

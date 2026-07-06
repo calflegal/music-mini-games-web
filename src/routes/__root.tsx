@@ -20,11 +20,11 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'Music Mini Games - Learn Music Through Fun Mini-Games',
+        title: 'Music Mini Games: Learn Music Through Fun Mini Games',
       },
       {
         name: 'description',
-        content: 'Learn music through interactive mini-games with real-time audio processing. Train your ear and master music skills. Daily challenges, streak tracking, and more. Free on iPhone & iPad.',
+        content: 'Learn music through interactive mini games with live audio processing. Identify chord progressions by ear, sing chords, and train your pitch. Daily challenges, streak tracking, and more. Free on iPhone & iPad.',
       },
       // Open Graph / Facebook
       {
@@ -33,11 +33,11 @@ export const Route = createRootRoute({
       },
       {
         property: 'og:title',
-        content: 'Music Mini Games - Interactive Music Learning',
+        content: 'Music Mini Games: Interactive Music Learning',
       },
       {
         property: 'og:description',
-        content: 'Multiple music mini-games with real-time audio processing! Learn chord singing, train your ear, and build daily streaks. Game Center leaderboards and more.',
+        content: 'Three music mini games with live audio processing. Identify chord progressions by ear, learn chord singing, and build daily streaks.',
       },
       {
         property: 'og:image',
@@ -50,11 +50,11 @@ export const Route = createRootRoute({
       },
       {
         property: 'twitter:title',
-        content: 'Music Mini Games - Interactive Music Learning',
+        content: 'Music Mini Games: Interactive Music Learning',
       },
       {
         property: 'twitter:description',
-        content: 'Multiple music mini-games with real-time audio processing! Learn chord singing, train your ear, and build daily streaks. Game Center leaderboards and more.',
+        content: 'Three music mini games with live audio processing. Identify chord progressions by ear, learn chord singing, and build daily streaks.',
       },
       {
         property: 'twitter:image',
